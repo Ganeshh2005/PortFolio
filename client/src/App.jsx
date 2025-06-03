@@ -287,7 +287,7 @@ function App() {
                       <li>Practical security implementations</li>
                     </ul>
                   </div>
-                </motion.div>
+            </motion.div>
               </div>
             </div>
           </section>

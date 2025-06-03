@@ -1,40 +1,26 @@
 {
-  "name": "portfolio-client",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Ganesh Lagad's Portfolio",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "client": "cd client && npm run dev",
+    "postinstall": "cd client && npm install"
   },
-  "keywords": [
-    "portfolio",
-    "mern",
-    "react",
-    "node",
-    "mongodb"
-  ],
-  "author": "",
-  "license": "MIT",
+  "keywords": [],
+  "author": "Ganesh Lagad",
+  "license": "ISC",
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@vercel/analytics": "^1.0.2",
-    "framer-motion": "^10.16.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "react-router-dom": "^6.15.0",
-    "react-scroll": "^1.8.9",
-    "react-toastify": "^9.1.3"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
-    "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "nodemon": "^3.0.3"
   }
 }
+
