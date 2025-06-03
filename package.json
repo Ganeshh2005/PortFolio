@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "A modern MERN stack portfolio with stunning UI/UX",
   "main": "server.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "server": "nodemon server/server.js",
-    "client": "cd client && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-client": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "setup": "npm install && npm run install-client",
-    "postinstall": "cd client && npm install"
-  },
+"scripts": {
+  "start": "node server/server.js",
+  "server": "nodemon server/server.js",
+  "client": "cd client && npm run dev",
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "install-client": "cd client && npm install",
+  "build": "cd client && npm run build",
+  "vercel-build": "npm run build",
+  "setup": "npm install && npm run install-client",
+  "postinstall": "cd client && npm install"
+},
+
   "keywords": [
     "portfolio",
     "mern",
@@ -34,5 +36,6 @@
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   }
+
 }
 
