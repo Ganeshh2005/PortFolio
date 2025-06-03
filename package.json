@@ -10,9 +10,16 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "install-client": "cd client && npm install",
     "build": "cd client && npm run build",
-    "setup": "npm install && npm run install-client"
+    "setup": "npm install && npm run install-client",
+    "postinstall": "cd client && npm install"
   },
-  "keywords": ["portfolio", "mern", "react", "node", "mongodb"],
+  "keywords": [
+    "portfolio",
+    "mern",
+    "react",
+    "node",
+    "mongodb"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -20,10 +27,12 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.5.0",
-    "nodemailer": "^6.9.4"
+    "nodemailer": "^6.9.4",
+    "vite": "^6.3.5"
   },
   "devDependencies": {
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   }
 }
+
